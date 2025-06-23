@@ -1,11 +1,13 @@
 import Header from "@/components/layout/header";
 import ProjectCard from "@/components/portfolio/project-card";
 import { projects } from "@/data/projects";
+import { useLocation } from "wouter";
 
 export default function Work() {
+  const [, setLocation] = useLocation();
+  
   const handleProjectClick = (projectId: string) => {
-    console.log("Project clicked:", projectId);
-    // TODO: Implement project detail view or modal
+    setLocation(`/project/${projectId}`);
   };
 
   return (
