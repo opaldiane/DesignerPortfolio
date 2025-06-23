@@ -83,6 +83,8 @@ Changelog:
 - June 23, 2025. Initial setup
 - June 23, 2025. Added project detail pages with full project information
 - June 23, 2025. Updated portfolio thumbnail hover animations with white overlay
+- June 23, 2025. Added blog detail pages with content rendering
+- June 23, 2025. Removed team field from project details and portrait from about page
 ```
 
 ## User Preferences

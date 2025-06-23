@@ -19,10 +19,10 @@ export default function About() {
       <Header />
       
       <main className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="max-w-4xl">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl font-semibold mb-6 text-primary">About Me</h2>
@@ -91,19 +91,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-          </motion.div>
-
-          <motion.div 
-            className="lg:pl-8"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <img 
-              src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1000" 
-              alt="Professional portrait" 
-              className="w-full rounded-2xl shadow-lg"
-            />
           </motion.div>
         </div>
       </main>

@@ -59,7 +59,7 @@ export default function ProjectDetail() {
             {project.title}
           </h1>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div>
               <h3 className="font-semibold text-primary mb-2">Role</h3>
               <p className="text-text-secondary">{project.role}</p>
@@ -73,11 +73,6 @@ export default function ProjectDetail() {
             <div>
               <h3 className="font-semibold text-primary mb-2">Tools</h3>
               <p className="text-text-secondary">{project.tools?.join(", ")}</p>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold text-primary mb-2">Team</h3>
-              <p className="text-text-secondary">{project.team}</p>
             </div>
           </div>
 
