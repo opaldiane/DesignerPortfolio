@@ -25,39 +25,16 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
           loading="lazy"
         />
         
-        <motion.div
-          className="absolute inset-0 bg-white/50 flex items-center justify-center"
-          initial={{ opacity: 0 }}
-          whileHover={{ 
-            opacity: 1,
-            transition: { duration: 0.3, ease: "easeOut" }
-          }}
-        >
-          <div className="text-center px-6">
-            <motion.h3 
-              className="text-primary font-semibold text-xl mb-2"
-              initial={{ y: 20, opacity: 0 }}
-              whileHover={{ 
-                y: 0, 
-                opacity: 1,
-                transition: { duration: 0.3, ease: "easeOut", delay: 0.1 }
-              }}
-            >
+        <div className="absolute inset-0 bg-white/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="text-center px-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <h3 className="text-black font-semibold text-2xl mb-3">
               {project.title}
-            </motion.h3>
-            <motion.p 
-              className="text-text-secondary text-sm"
-              initial={{ y: 20, opacity: 0 }}
-              whileHover={{ 
-                y: 0, 
-                opacity: 1,
-                transition: { duration: 0.3, ease: "easeOut", delay: 0.15 }
-              }}
-            >
+            </h3>
+            <p className="text-gray-800 text-base">
               {project.description}
-            </motion.p>
+            </p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );
