@@ -25,7 +25,7 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
           loading="lazy"
         />
         
-        <div className="absolute inset-0 bg-white/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute inset-0 bg-white/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="text-center px-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
             <h3 className="text-black font-semibold text-2xl mb-3">
               {project.title}

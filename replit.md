@@ -81,6 +81,8 @@ The build process:
 ```
 Changelog:
 - June 23, 2025. Initial setup
+- June 23, 2025. Added project detail pages with full project information
+- June 23, 2025. Updated portfolio thumbnail hover animations with white overlay
 ```
 
 ## User Preferences
