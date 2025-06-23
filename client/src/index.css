@@ -77,3 +77,32 @@
     background-color: var(--bg-primary);
   }
 }
+
+/* Blog content styling */
+.prose h2 {
+  @apply text-2xl font-semibold mt-8 mb-4 text-primary;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold mt-6 mb-3 text-primary;
+}
+
+.prose h4 {
+  @apply text-lg font-semibold mt-4 mb-2 text-primary;
+}
+
+.prose p {
+  @apply mb-4 text-text-primary;
+}
+
+.prose ul {
+  @apply mb-4 pl-6;
+}
+
+.prose li {
+  @apply mb-2 text-text-primary list-disc;
+}
+
+.prose strong {
+  @apply font-semibold text-primary;
+}

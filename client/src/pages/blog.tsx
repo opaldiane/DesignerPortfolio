@@ -1,8 +1,14 @@
 import Header from "@/components/layout/header";
 import { blogPosts } from "@/data/blog-posts";
 import { motion } from "framer-motion";
+import { useLocation } from "wouter";
 
 export default function Blog() {
+  const [, setLocation] = useLocation();
+  
+  const handlePostClick = (postId: string) => {
+    setLocation(`/blog/${postId}`);
+  };
   return (
     <div className="min-h-screen bg-bg-primary">
       <Header />
@@ -25,6 +31,7 @@ export default function Blog() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -2 }}
+              onClick={() => handlePostClick(post.id)}
             >
               <div className="flex items-center space-x-4 mb-4">
                 <span className="text-text-secondary text-sm">{post.category}</span>
